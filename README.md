@@ -1,4 +1,4 @@
-# Slider
+# Slider With Labels
 ![Preview - slider with different markers](/extras/preview.jpg)
 
 
