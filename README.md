@@ -19,7 +19,7 @@ media:audio	| Yes
 media:video	| Yes
 
 # How to use
-To use this plug-in as-is, just download the slider-label.fieldplugin.zip file from this repo, and attach it to your form.
+To use this plug-in as-is, just download the [slider-label.fieldplugin.zip](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/slider-label.fieldplugin.zip) file from this repo, and attach it to your form.
 
 To create your own field plug-in using this as a template, follow these steps:
 
