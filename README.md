@@ -25,7 +25,8 @@ To create your own field plug-in using this as a template, follow these steps:
 
 1. Fork this repo
 
-2. Make changes to the files in the `source` directory.
+2. Make changes to the files in the `source` directory.  
+    
     -__Note:__ be sure to update the `manifest.json` file as well.
   
 3. Zip the updated contents of the `source` directory.
@@ -35,16 +36,15 @@ To create your own field plug-in using this as a template, follow these steps:
 5. You may then attach your new .fieldplugin.zip file to your form as normal.
 
 # Parameters
-There should be three parameters included. The first represents the minimum value of the range, the second represents the maximum value of the range and the third what kind of markers you want or if you dont want markers at all - see previews above. For example to create a slider range from 0 to 100, you can use this apprearance depending on markers needed.
-      `custom-slider(A="0", B="100", C="none")`
-      `custom-slider(A="0", B="100", C="pips")`
-      `custom-slider(A="0", B="100", C="labels")`
+There should be three parameters included. The first represents the minimum value of the range, the second represents the maximum value of the range and the third what kind of markers you want or if you dont want markers at all - see previews above. For example to create a slider range from 0 to 100, you can use this apprearance depending on markers needed.  
+      `custom-slider(A="0", B="100", C="none")`  
+      `custom-slider(A="0", B="100", C="pips")`  
+      `custom-slider(A="0", B="100", C="labels")`  
 
 # More Resources
 -__Test form__
- 
- You can find a form definition in this repo here: extras/sample_form. This form will help you create a sample form to test the functionality of the plugin.
+You can find a form definition in this repo here: extras/sample_form. This form will help you create a sample form to test the functionality of the plugin.
 
--__Developer documentation__
-
+-__Developer documentation__    
+The plugin uses [Slider Pips](https://simeydotme.github.io/jQuery-ui-Slider-Pips/#styling-circles) which you can use for further customization  
 More instructions for developing and using field plug-ins can be found here: https://github.com/surveycto/Field-plug-in-resources
