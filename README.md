@@ -26,9 +26,9 @@ To create your own field plug-in using this as a template, follow these steps:
 1. Fork this repo
 
 2. Make changes to the files in the `source` directory.  
-    
+
     -__Note:__ be sure to update the `manifest.json` file as well.
-  
+
 3. Zip the updated contents of the `source` directory.
 
 4. Rename the .zip file to *yourpluginname*.fieldplugin.zip (replace *yourpluginname* with the name you want to use for your plug-in).
@@ -37,9 +37,9 @@ To create your own field plug-in using this as a template, follow these steps:
 
 # Parameters
 There should be three parameters included. The first represents the minimum value of the range, the second represents the maximum value of the range and the third what kind of markers you want or if you dont want markers at all - see previews above. For example to create a slider range from 0 to 100, you can use this apprearance depending on markers needed.  
-      `custom-slider(A="0", B="100", C="none")`  
-      `custom-slider(A="0", B="100", C="pips")`  
-      `custom-slider(A="0", B="100", C="labels")`  
+      `custom-slider(min="0", max="100", markers="none")`  
+      `custom-slider(min="0", max="100", markers="yes")`  
+      `custom-slider(min="0", max="100", markers="labels")`  
 
 # More Resources
 -__Test form__

@@ -1,3 +1,4 @@
+$('.ui-slider-handle').draggable();
 // Declare some variables to use
 var first_view = false;
 var last_view = false;
@@ -11,7 +12,7 @@ var entered_min = Number(parameters[0].value);
 var entered_max = Number(parameters[1].value);
 var entered_view = parameters[2].value;
 
-if(entered_view === "pips"){
+if(entered_view === "yes"){
     first_view = "pip";
     last_view = "pip";
     rest_view = "pip"
@@ -38,7 +39,7 @@ $(".slider")
         rest: rest_view
     });
 
-    $(".slider").on("slidechange", function( e, ui ) { 
+    $(".slider").on("slidechange", function( e, ui ) {
         /*use this if you want to display the changing value of the slider on the screen - check the template.html too
         $( "#slider-value" ).html(  $(".slider").slider("value") )*/
         setAnswer( $(".slider").slider("value"));
@@ -55,4 +56,3 @@ function setFocus() {
         $(".slider").focus();
     }
 }
-
