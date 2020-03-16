@@ -2,3 +2,12 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .slider .ui-slider-handle {
+  border-radius: 23px;
+  height: 23px;
+  width: 23px;
+  top: -7px;
+  margin-left: -11px;
+  border: 2px solid #4CAF50;
+; }
