@@ -27,11 +27,11 @@
 <!-- If the field is marked read only, then only show the input box if there is a current answer. -->
 {{#READONLY}}
     {{#CURRENT_ANSWER}}
-    <input 
+    <input
         type="text" 
-        value="{{CURRENT_ANSWER}}" 
-        id="integer-field" 
-        class="response default-answer-text-size" 
+        value="{{CURRENT_ANSWER}}"
+        id="integer-field"
+        class="response default-answer-text-size"
         readonly
     />
     {{/CURRENT_ANSWER}}
@@ -43,5 +43,5 @@
     <div class="slider"></div>
     <!-- use this if you want to display the changing value of the slider on the screen - check the script.js too
     <p>Your slider has a value of <span id="slider-value"></span></p>-->
-    
+
 {{/READONLY}}

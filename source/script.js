@@ -4,6 +4,8 @@ var first_view = false;
 var last_view = false;
 var rest_view = false;
 
+var current_value = fieldProperties.CURRENT_ANSWER;
+
 //collect parameters entered in Form Definition
 var parameters = fieldProperties.PARAMETERS;
 
@@ -43,7 +45,14 @@ $(".slider")
         /*use this if you want to display the changing value of the slider on the screen - check the template.html too
         $( "#slider-value" ).html(  $(".slider").slider("value") )*/
         setAnswer( $(".slider").slider("value"));
-});
+    }
+);
+
+if (current_value!=null){
+  $(".slider").slider('value',current_value);
+}
+
+
 
 //Define what happens when the user attempts to clear the response
 /*function clearAnswer() {
