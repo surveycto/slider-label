@@ -1,13 +1,20 @@
-.slider {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.sliderContainer {
+  width: 100%;
+}
 
+#slider-value {
+  text-align: center;
+}
   .slider .ui-slider-handle {
   border-radius: 23px;
   height: 23px;
   width: 23px;
   top: -7px;
-  margin-left: -11px;
   border: 2px solid #4CAF50;
-; }
+}
+
+.slider{
+  position: relative;
+  margin-left: 12px;
+  margin-right: 15px;
+}

@@ -3,6 +3,7 @@ $('.ui-slider-handle').draggable();
 var first_view = false;
 var last_view = false;
 var rest_view = false;
+var entered_step = 1;
 
 var current_value = fieldProperties.CURRENT_ANSWER;
 
@@ -30,29 +31,36 @@ else if (entered_view ===  "none"){
     rest_view = false
 }
 
-$(".slider")
+if (parameters[3] != null){
+  entered_step = Number(parameters[3].value);
+}
+
+$('.slider')
     .slider({
         min: entered_min,
-        max: entered_max
+        max: entered_max,
+        step: entered_step
     })
-    .slider("pips", {
+    .slider('pips', {
         first: first_view,
         last: last_view,
         rest: rest_view
     });
 
     $(".slider").on("slidechange", function( e, ui ) {
-        /*use this if you want to display the changing value of the slider on the screen - check the template.html too
-        $( "#slider-value" ).html(  $(".slider").slider("value") )*/
-        setAnswer( $(".slider").slider("value"));
+        //use this if you want to display the changing value of the slider on the screen - check the template.html too
+        if (parameters[4] != null){
+          //$("p").text("Your slider has a value of ");
+          $( "#slider-value" ).html("Current Value is: " + $(".slider").slider("value") );
+          console.log($(".slider").slider("value"));
+        }
+        setAnswer(Number($(".slider").slider("value")));
     }
 );
 
 if (current_value!=null){
-  $(".slider").slider('value',current_value);
+  Number($(".slider").slider('value',current_value));
 }
-
-
 
 //Define what happens when the user attempts to clear the response
 /*function clearAnswer() {

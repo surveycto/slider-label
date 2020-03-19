@@ -28,7 +28,7 @@
 {{#READONLY}}
     {{#CURRENT_ANSWER}}
     <input
-        type="text" 
+        type="text"
         value="{{CURRENT_ANSWER}}"
         id="integer-field"
         class="response default-answer-text-size"
@@ -40,8 +40,14 @@
 <!-- if the field is not marked read only, show the input box always. -->
 {{^READONLY}}
 
-    <div class="slider"></div>
-    <!-- use this if you want to display the changing value of the slider on the screen - check the script.js too
-    <p>Your slider has a value of <span id="slider-value"></span></p>-->
+    <div class="sliderContainer">
+      <div class="slider"></div>
+    </div>
+
+    <!-- use this if you want to display the changing value of the slider on the screen - check the script.js too-->
+    <div class="label default-question-text-size">
+      <p id="slider-value"></p>
+    </div>
+
 
 {{/READONLY}}

@@ -36,14 +36,26 @@ To create your own field plug-in using this as a template, follow these steps:
 5. You may then attach your new .fieldplugin.zip file to your form as normal.
 
 # Parameters
-There should be three parameters included. The first represents the minimum value of the range, the second represents the maximum value of the range and the third what kind of markers you want or if you dont want markers at all - see previews above. For example to create a slider range from 0 to 100, you can use this apprearance depending on markers needed.  
+There should be five parameters included.
+1. min - The lowest value in the range of permitted values
+2. max - The greatest value in the range of permitted values
+3. markers - can take three values
+  a. none - slider will have no markers
+  b. yes - slider will have markers at set intervals (determined by the step parameter)
+  c. labels - slider will have labels and markers.
+4. step - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals
+5. display_value (optional) - use this to display the current value of the slider below the slider.
+
+Examples would be...  
       `custom-slider(min="0", max="100", markers="none")`  
       `custom-slider(min="0", max="100", markers="yes")`  
-      `custom-slider(min="0", max="100", markers="labels")`  
+      `custom-slider(min="0", max="100", markers="labels")`
+      `custom-slider(min="0", max="1", markers="labels", step=0.1)`
+      `custom-slider(min="0", max="10", markers="labels", step=1, display_value="yes")`  
 
 # More Resources
 -__Test form__
-You can find a form definition in this repo here: extras/sample_form. This form will help you create a sample form to test the functionality of the plugin.
+You can find a form definition in this repo here: [extras/sample_form](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/extras/sample_form/slider_label_sample.xlsx). This form will help you create a sample form to test the functionality of the plugin.
 
 -__Developer documentation__    
 The plugin uses [Slider Pips](https://simeydotme.github.io/jQuery-ui-Slider-Pips/#styling-circles) which you can use for further customization  
