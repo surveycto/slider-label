@@ -1,5 +1,6 @@
 .sliderContainer {
   width: 100%;
+  margin-right: 0;
 }
 
 #slider-value {
@@ -16,5 +17,5 @@
 .slider{
   position: relative;
   margin-left: 12px;
-  margin-right: 15px;
+  margin-right: 25px;
 }

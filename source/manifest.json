@@ -1,7 +1,7 @@
 {
 	"name" : "Slider With Labels",
 	"author" : "Dobility",
-	"version": "1.50",
+	"version": "1.53",
 	"supportedFieldTypes": ["integer", "decimal"],
 	"externalCss": [ "jquery-ui-slider-pips-min.css", "jquery-ui.min.css" ],
    	"externalJs": [ "jquery-3.4.1.min.js","jquery-ui.min.js","jquery-ui-slider-pips-min.js", "jquery.ui.touch-punch.min.js" ],

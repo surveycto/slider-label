@@ -51,7 +51,7 @@ $('.slider')
         //use this if you want to display the changing value of the slider on the screen - check the template.html too
         if (parameters[4] != null){
           //$("p").text("Your slider has a value of ");
-          $( "#slider-value" ).html("Current Value is: " + $(".slider").slider("value") );
+          $( "#slider-value" ).html($(".slider").slider("value") );
           console.log($(".slider").slider("value"));
         }
         setAnswer(Number($(".slider").slider("value")));

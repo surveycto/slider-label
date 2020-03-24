@@ -3,7 +3,7 @@
 
 
 # Description
-Allows for a continuous slider with an option for markers or labels
+Allows for a slider with an option for markers or labels
 
 # Default SurveyCTO feature support
 
