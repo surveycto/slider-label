@@ -40,17 +40,17 @@ There should be five parameters included.
 1. min - The lowest value in the range of permitted values
 2. max - The greatest value in the range of permitted values
 3. markers - can take three values
-  a. none - slider will have no markers
-  b. yes - slider will have markers at set intervals (determined by the step parameter)
-  c. labels - slider will have labels and markers.
+  -a. none - slider will have no markers
+  -b. yes - slider will have markers at set intervals (determined by the step parameter)
+  -c. labels - slider will have labels and markers.
 4. step - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals
 5. display_value (optional) - use this to display the current value of the slider below the slider.
 
-Examples would be...  
+Examples would be...    
       `custom-slider(min="0", max="100", markers="none")`  
       `custom-slider(min="0", max="100", markers="yes")`  
-      `custom-slider(min="0", max="100", markers="labels")`
-      `custom-slider(min="0", max="1", markers="labels", step=0.1)`
+      `custom-slider(min="0", max="100", markers="labels")`  
+      `custom-slider(min="0", max="1", markers="labels", step=0.1)  `
       `custom-slider(min="0", max="10", markers="labels", step=1, display_value="yes")`  
 
 # More Resources
