@@ -1,4 +1,4 @@
-# Slider With Labels
+# Slider with labels
 ![Preview - slider with different markers](/extras/preview.jpg)
 
 
@@ -53,7 +53,7 @@ Examples would be...
       `custom-slider(min="0", max="1", markers="labels", step=0.1)`  
       `custom-slider(min="0", max="10", markers="labels", step=1, display_value="yes")`  
 
-# More Resources
+# More resources
 -__Test form__
 You can find a form definition in this repo here: [extras/sample_form](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/extras/sample_form/slider_label_sample.xlsx). This form will help you create a sample form to test the functionality of the plugin.
 
