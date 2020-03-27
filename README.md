@@ -58,4 +58,7 @@ Examples would be...
 You can find a form definition in this repo here: [extras/sample_form](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/extras/sample_form/slider_label_sample.xlsx). This form will help you create a sample form to test the functionality of the field plug-in.
 
 ### Developer documentation   
-This field plug-in uses [Slider Pips](https://simeydotme.github.io/jQuery-ui-Slider-Pips/#styling-circles) which you can use for further customization. More instructions for developing and using field plug-ins can be found [here](https://github.com/surveycto/Field-plug-in-resources).
+* **Source resources** <br>
+This field plug-in uses [Slider Pips](https://simeydotme.github.io/jQuery-ui-Slider-Pips/#styling-circles) which you can use for further customization.
+* **Developer documentation for field plug-ins** <br>
+More instructions for developing and using field plug-ins. https://github.com/surveycto/Field-plug-in-resources
