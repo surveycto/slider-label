@@ -3,7 +3,7 @@
 
 
 # Description
-Allows for a slider with an option for markers or labels
+Allows for a slider with an option for markers or labels.
 
 # Default SurveyCTO feature support
 
@@ -19,7 +19,7 @@ media:audio	| Yes
 media:video	| Yes
 
 # How to use
-To use this plug-in as-is, just download the [slider-label.fieldplugin.zip](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/slider-label.fieldplugin.zip) file from this repo, and attach it to your form.
+To use this field plug-in as-is, just download the [slider-label.fieldplugin.zip](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/slider-label.fieldplugin.zip) file from this repo, and attach it to your form.
 
 To create your own field plug-in using this as a template, follow these steps:
 
@@ -37,13 +37,13 @@ To create your own field plug-in using this as a template, follow these steps:
 
 # Parameters
 There should be five parameters included.
-1. min - The lowest value in the range of permitted values
-2. max - The greatest value in the range of permitted values
-3. markers - can take three values
-  -none - slider will have no markers
-  -yes - slider will have markers at set intervals (determined by the step parameter)
+1. min - The lowest value in the range of permitted values.
+2. max - The greatest value in the range of permitted values.
+3. markers - can take three values.
+  -none - slider will have no markers.
+  -yes - slider will have markers at set intervals (determined by the step parameter).
   -labels - slider will have labels and markers.
-4. step - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals
+4. step - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals.
 5. display_value (optional) - use this to display the current value of the slider below the slider.
 
 Examples would be...    
@@ -55,8 +55,7 @@ Examples would be...
 
 # More resources
 -__Test form__
-You can find a form definition in this repo here: [extras/sample_form](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/extras/sample_form/slider_label_sample.xlsx). This form will help you create a sample form to test the functionality of the plugin.
+You can find a form definition in this repo here: [extras/sample_form](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/extras/sample_form/slider_label_sample.xlsx). This form will help you create a sample form to test the functionality of the field plug-in.
 
 -__Developer documentation__    
-The plugin uses [Slider Pips](https://simeydotme.github.io/jQuery-ui-Slider-Pips/#styling-circles) which you can use for further customization  
-More instructions for developing and using field plug-ins can be found here: https://github.com/surveycto/Field-plug-in-resources
+This field plug-in uses [Slider Pips](https://simeydotme.github.io/jQuery-ui-Slider-Pips/#styling-circles) which you can use for further customization. More instructions for developing and using field plug-ins can be found [here](https://github.com/surveycto/Field-plug-in-resources).
