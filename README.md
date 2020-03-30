@@ -5,6 +5,8 @@
 # Description
 Allows for a slider with an option for markers or labels.
 
+[![Download now](extras/download-button.png)](https://github.com/surveycto/slider-label/raw/master/slider-label.fieldplugin.zip)
+
 # Default SurveyCTO feature support
 
 Feature / Property |	Support
