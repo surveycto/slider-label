@@ -21,21 +21,10 @@ media:audio	| Yes
 media:video	| Yes
 
 # How to use
-To use this field plug-in as-is, just download the [slider-label.fieldplugin.zip](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/slider-label.fieldplugin.zip) file from this repo, and attach it to your form.
 
-To create your own field plug-in using this as a template, follow these steps:
-
-1. Fork this repo.
-
-2. Make changes to the files in the `source` directory.  
-
-    -__Note:__ be sure to update the `manifest.json` file as well.
-
-3. Zip the updated contents of the `source` directory.
-
-4. Rename the .zip file to *yourpluginname*.fieldplugin.zip (replace *yourpluginname* with the name you want to use for your plug-in).
-
-5. You may then attach your new .fieldplugin.zip file to your form as normal.
+1. Download the test form [extras/sample-form](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/extras/sample_form/slider_label_sample.xlsx) from this repo and upload it to your SurveyCTO server.
+1. Download the [slider-label.fieldplugin.zip](https://github.com/surveycto/slider-label/raw/master/slider-label.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
+1. Make sure to provide the correct parameters (see below).
 
 # Parameters
 There should be five parameters included.
