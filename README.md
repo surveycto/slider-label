@@ -46,7 +46,7 @@ Examples would be...
 
 # More resources
 ### Test form
-You can find a form definition in this repo here: [extras/sample_form](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/extras/sample_form/slider_label_sample.xlsx). This form will help you create a sample form to test the functionality of the field plug-in.
+You can find a form definition in this repo here: [extras/sample_form](https://github.com/surveycto/slider-label/raw/master/extras/example-form/Example%20form%20-%20slider-label.xlsx). This form will help you create a sample form to test the functionality of the field plug-in.
 
 ### Developer documentation   
 * **Source resources** <br>
