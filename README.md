@@ -7,6 +7,14 @@ Allows for a slider with an option for markers or labels.
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/slider-label/raw/master/slider-label.fieldplugin.zip)
 
+# Features
+* Display a slider with markers
+* Allow for varying step size
+* Allow for displaying the value
+
+# Data Format
+The field value will be the last value indicated on the slider. This will be an integer for an [integer field](https://docs.surveycto.com/02-designing-forms/01-core-concepts/03f.field-types-integer.html) or a decimal for a [decimal field](https://docs.surveycto.com/02-designing-forms/01-core-concepts/03g.field-types-decimal.html).
+
 # Default SurveyCTO feature support
 
 Feature / Property |	Support
@@ -27,7 +35,8 @@ media:video	| Yes
 1. Make sure to provide the correct parameters (see below).
 
 # Parameters
-There should be five parameters included.
+The plugin can take up to 5 parameters:
+
 1. `min` - The lowest value in the range of permitted values.
 2. `max` - The greatest value in the range of permitted values.
 3. `markers` - can take three values.
@@ -37,15 +46,16 @@ There should be five parameters included.
 4. `step` - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals.
 5. `display_value` (optional) - use this to display the current value of the slider below the slider.
 
-Examples would be...    
-      `custom-slider(min="0", max="100", markers="none")`  
-      `custom-slider(min="0", max="100", markers="yes")`  
-      `custom-slider(min="0", max="100", markers="labels")`  
-      `custom-slider(min="0", max="1", markers="labels", step=0.1)`  
-      `custom-slider(min="0", max="10", markers="labels", step=1, display_value="yes")`  
+Examples usage is as follows:
+
+      `custom-slider-label(min="0", max="100", markers="none")`  
+      `custom-slider-label(min="0", max="100", markers="yes")`  
+      `custom-slider-label(min="0", max="100", markers="labels")`  
+      `custom-slider-label(min="0", max="1", markers="labels", step=0.1)`  
+      `custom-slider-label(min="0", max="10", markers="labels", step=1, display_value="yes")`  
 
 # More resources
-### Test form
+### Sample form
 You can find a form definition in this repo here: [extras/sample_form](https://github.com/surveycto/slider-label/raw/master/extras/example-form/Example%20form%20-%20slider-label.xlsx). This form will help you create a sample form to test the functionality of the field plug-in.
 
 ### Developer documentation   
