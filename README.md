@@ -48,11 +48,11 @@ The plugin can take up to 5 parameters:
 
 Examples usage is as follows:
 
-      `custom-slider-label(min="0", max="100", markers="none")`  
-      `custom-slider-label(min="0", max="100", markers="yes")`  
-      `custom-slider-label(min="0", max="100", markers="labels")`  
-      `custom-slider-label(min="0", max="1", markers="labels", step=0.1)`  
-      `custom-slider-label(min="0", max="10", markers="labels", step=1, display_value="yes")`  
+`custom-slider-label(min="0", max="100", markers="none")`  
+`custom-slider-label(min="0", max="100", markers="yes")`  
+`custom-slider-label(min="0", max="100", markers="labels")`  
+`custom-slider-label(min="0", max="1", markers="labels", step=0.1)`  
+`custom-slider-label(min="0", max="10", markers="labels", step=1, display_value="yes")`  
 
 # More resources
 ### Sample form
