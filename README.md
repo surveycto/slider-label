@@ -30,7 +30,7 @@ media:video	| Yes
 
 # How to use
 
-1. Download the test form [extras/sample-form](https://github.com/SurveyCTO-field-plug-ins/slider-label/blob/master/extras/sample_form/slider_label_sample.xlsx) from this repo and upload it to your SurveyCTO server.
+1. Download the test form [extras/sample-form](https://github.com/surveycto/slider-label/raw/master/extras/sample-form/Sample%20form%20-%20slider-labe%20field%20plug-inl.xlsx) from this repo and upload it to your SurveyCTO server.
 1. Download the [slider-label.fieldplugin.zip](https://github.com/surveycto/slider-label/raw/master/slider-label.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
 1. Make sure to provide the correct parameters (see below).
 
@@ -56,7 +56,7 @@ Examples usage is as follows:
 
 # More resources
 ### Sample form
-You can find a form definition in this repo here: [extras/sample_form](https://github.com/surveycto/slider-label/raw/master/extras/example-form/Example%20form%20-%20slider-label.xlsx). This form will help you create a sample form to test the functionality of the field plug-in.
+You can find a form definition in this repo here: [extras/sample_form](https://github.com/surveycto/slider-label/raw/master/extras/sample-form/Sample%20form%20-%20slider-labe%20field%20plug-inl.xlsx). This form will help you create a sample form to test the functionality of the field plug-in.
 
 ### Developer documentation   
 * **Source resources** <br>
