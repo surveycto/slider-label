@@ -66,6 +66,15 @@ $('.slider').on('slidechange', function (e, ui) {
 if (currentValue != null) {
   Number($('.slider').slider('value', currentValue))
 }
+function button1Click() {
+  setAnswer(Number(-999))
+  goToNextField()
+}
+
+function button2Click() {
+  setAnswer(Number(-888))
+  goToNextField()
+}
 
 // Define what happens when the user attempts to clear the response
 /* function clearAnswer() {
