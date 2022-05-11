@@ -46,7 +46,8 @@ $('.slider')
   .slider({
     min: enteredMin,
     max: enteredMax,
-    step: step
+    step: step,
+    value: 6 // Default value is 6.
   })
   .slider('pips', {
     first: firstView,
@@ -66,6 +67,7 @@ $('.slider').on('slidechange', function (e, ui) {
 if (currentValue != null) {
   Number($('.slider').slider('value', currentValue))
 }
+
 function button1Click() {
   setAnswer(Number(-999))
   goToNextField()
