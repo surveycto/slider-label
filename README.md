@@ -5,7 +5,7 @@
 # Description
 Allows for a slider with an option for markers or labels.
 
-[![Download now](extras/download-button.png)](https://github.com/surveycto/slider-label/raw/master/slider-label.fieldplugin.zip)
+[![Download now](extras/download-button.png)](hhttps://github.com/surveycto/slider-label/blob/add-buttons/slider-label.fieldplugin.zip)
 
 # Features
 * Display a slider with markers
@@ -31,7 +31,7 @@ media:video	| Yes
 # How to use
 
 1. Download the test form [extras/sample-form](https://github.com/surveycto/slider-label/raw/master/extras/sample-form/Sample%20form%20-%20slider-labe%20field%20plug-inl.xlsx) from this repo and upload it to your SurveyCTO server.
-1. Download the [slider-label.fieldplugin.zip](https://github.com/surveycto/slider-label/raw/master/slider-label.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
+1. Download the [slider-label.fieldplugin.zip](https://github.com/surveycto/slider-label/blob/add-buttons/slider-label.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
 1. Make sure to provide the correct parameters (see below).
 
 # Parameters
