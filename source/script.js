@@ -15,6 +15,7 @@ var enteredMin = getPluginParameter('min')
 var enteredMax = getPluginParameter('max')
 var enteredView = getPluginParameter('markers')
 var displayValue = getPluginParameter('display_value')
+var handleTransparency = getPluginParameter('handle_transparency')
 
 if (step == null) {
   step = 1
@@ -53,6 +54,19 @@ $('.slider')
     last: lastView,
     rest: restView
   })
+
+  // Hide the handle to remove bias
+  if (handleTransparency === 1) {
+    $(".slider").slider({
+      start: function() {
+        $(".ui-slider-handle", this).show();
+        Number($('.slider').slider('value', currentValue))
+      }
+    });
+    var sw = $(".slider").slider("widget");
+    $(".ui-slider-handle", sw).hide();
+    currentValue = null
+  }
 
 $('.slider').on('slidechange', function (e, ui) {
   // Use this if you want to display the changing value of the slider on the screen - check the template.html too
