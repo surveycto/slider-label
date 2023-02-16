@@ -35,7 +35,7 @@ media:video	| Yes
 1. Make sure to provide the correct parameters (see below).
 
 # Parameters
-The plugin can take up to 5 parameters:
+The plugin can take up to 6 parameters:
 
 1. `min` - The lowest value in the range of permitted values.
 2. `max` - The greatest value in the range of permitted values.
@@ -45,6 +45,7 @@ The plugin can take up to 5 parameters:
   -labels - slider will have labels and markers.
 4. `step` - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals.
 5. `display_value` (optional) - use this to display the current value of the slider below the slider.
+6. `handle_transparency` (optional) - Give this a value of `1` to hide the indicator when you load the slider. 
 
 Examples usage is as follows:
 
