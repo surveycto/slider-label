@@ -11,6 +11,7 @@ Allows for a slider with an option for markers or labels.
 * Display a slider with markers
 * Allow for varying step size
 * Allow for displaying the value
+* Option for hiding the indicator thumb to remove starting bias
 
 # Data Format
 The field value will be the last value indicated on the slider. This will be an integer for an [integer field](https://docs.surveycto.com/02-designing-forms/01-core-concepts/03f.field-types-integer.html) or a decimal for a [decimal field](https://docs.surveycto.com/02-designing-forms/01-core-concepts/03g.field-types-decimal.html).
@@ -35,7 +36,7 @@ media:video	| Yes
 1. Make sure to provide the correct parameters (see below).
 
 # Parameters
-The plugin can take up to 5 parameters:
+The plugin can take up to 6 parameters:
 
 1. `min` - The lowest value in the range of permitted values.
 2. `max` - The greatest value in the range of permitted values.
@@ -45,6 +46,7 @@ The plugin can take up to 5 parameters:
   -labels - slider will have labels and markers.
 4. `step` - The step attribute is a number that specifies the granularity that the value must adhere to. The default is 1 for integer and 0.1 for decimals.
 5. `display_value` (optional) - use this to display the current value of the slider below the slider.
+6. `hide_thumb` (optional) - Give this a value of `1` to hide the slider indicator thumb when you first load the slider. 
 
 Examples usage is as follows:
 
