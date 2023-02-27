@@ -18,7 +18,7 @@ var enteredMin = getPluginParameter('min')
 var enteredMax = getPluginParameter('max')
 var enteredView = getPluginParameter('markers')
 var displayValue = getPluginParameter('display_value')
-var handleTransparency = getPluginParameter('handle_transparency')
+var handleTransparency = getPluginParameter('hide_thumb')
 
 // Set default step count to 1 if no value is provided
 if (step == null) {
@@ -60,7 +60,7 @@ $('.slider')
     rest: restView
   })
 
-  // Hide the handle to remove bias. Ideally this should happen only on the first vist
+  // Hide the indicator thumb to remove bias. This will when the field has no value
   if (handleTransparency === 1 && currentValue == null) {
     $(".slider").slider({
       start: function() {
