@@ -1,13 +1,16 @@
 /* global $, fieldProperties, setAnswer, getPluginParameter, clearAnswer, getMetaData, setMetaData */
 
+// Allows the slider to be dragged on touch screen interfaces
 $('.ui-slider-handle').draggable()
 
-// Declare some variables to use
+// Declare and initialize some variables to use
 var firstView = false
 var lastView = false
 var restView = false
 var step = getPluginParameter('step')
 
+// Check whether a value has been entered or not
+// Useful to check when sliding back to the field. 
 var currentValue = fieldProperties.CURRENT_ANSWER
 
 // Get parameter values and set the max and min based on these
@@ -15,10 +18,13 @@ var enteredMin = getPluginParameter('min')
 var enteredMax = getPluginParameter('max')
 var enteredView = getPluginParameter('markers')
 var displayValue = getPluginParameter('display_value')
+var handleTransparency = getPluginParameter('hide_thumb')
 
+// Set default step count to 1 if no value is provided
 if (step == null) {
   step = 1
 }
+
 
 enteredMin = parseInt(enteredMin)
 enteredMax = parseInt(enteredMax)
@@ -53,6 +59,19 @@ $('.slider')
     last: lastView,
     rest: restView
   })
+
+  // Hide the indicator thumb to remove bias. This will when the field has no value
+  if (handleTransparency === 1 && currentValue == null) {
+    $(".slider").slider({
+      start: function() {
+        $(".ui-slider-handle", this).show();
+        Number($('.slider').slider('value', currentValue))
+      }
+    });
+    var sw = $(".slider").slider("widget");
+    $(".ui-slider-handle", sw).hide();
+    currentValue = null
+  }
 
 $('.slider').on('slidechange', function (e, ui) {
   // Use this if you want to display the changing value of the slider on the screen - check the template.html too
